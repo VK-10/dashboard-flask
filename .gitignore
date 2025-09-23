@@ -1,0 +1,65 @@
+# =======================
+# Frontend (Node.js / React)
+# =======================
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.js
+
+# Build output
+/frontend/build
+
+# Testing
+/frontend/coverage
+
+# Logs
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Environment variables
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# =======================
+# Backend (Python / Flask)
+# =======================
+# Byte-compiled / optimized / DLL files
+/backend/__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+/backend/venv/
+/backend/flask-viz-env/
+
+# Environment variables
+/backend/.env
+/backend/.env.*
+
+# Jupyter Notebook checkpoints
+/backend/.ipynb_checkpoints
+
+# Logs
+/backend/*.log
+
+# =======================
+# IDEs / Editors
+# =======================
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# =======================
+# OS / Misc
+# =======================
+.DS_Store
+*.swp
+*.swo
+*.tmp
+*.bak
