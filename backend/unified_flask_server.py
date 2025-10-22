@@ -11,7 +11,14 @@ import os
 matplotlib.use('Agg')
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, reources = {
+    r"/*": {
+        "origins": [
+
+            "http://localhost:3000"
+        ]
+    }
+})
 
 print("Starting unified Flask server with correct CSV format handling...")
 
@@ -410,4 +417,8 @@ if __name__ == '__main__':
         print("  GET /api/stocks/<ticker>/volume - Volume charts")
     
     print("="*60)
-    app.run(debug=True, host='127.0.0.1', port=5000)
+    
+    # Use environment port for deployment, default to 5000 for local
+    port = int(os.environ.get('PORT', 5000))
+    debug_mode = os.environ.get('FLASK_ENV') != 'production'
+    app.run(debug=debug_mode, host='0.0.0.0', port=port)

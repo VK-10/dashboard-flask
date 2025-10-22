@@ -1,6 +1,7 @@
-flask
-flask-cors
-pandas
-matplotlib
-seaborn
-mplfinance
+flask==3.0.0
+flask-cors==4.0.0
+pandas==2.1.4
+matplotlib==3.8.2
+seaborn==0.13.0
+mplfinance==0.12.10
+gunicorn==21.2.0
