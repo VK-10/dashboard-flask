@@ -2,7 +2,7 @@
 
 A real-time stock market dashboard built with Flask and React that provides technical analysis and visualization tools for various stock symbols.
 
-Deployed link - ```dashboard-flask-ndeithpts-lights-projects-96102957.vercel.app```
+Deployed link - `dashboard-flask-ndeithpts-lights-projects-96102957.vercel.app`
 
 ## Features
 
@@ -81,7 +81,6 @@ npm install
 npm start
 ```
 
-The frontend will be available at `http://localhost:3000`
 
 ## Available Stock Symbols
 
@@ -97,16 +96,6 @@ The dashboard currently supports the following stock symbols:
 - NFLX (Netflix)
 - AMD (Advanced Micro Devices)
 
-## API Endpoints
-
-- `GET /health` - Server health status
-- `GET /symbols` - List of available stock symbols
-- `GET /stock/graph` - Generate technical analysis graphs
-  - Parameters:
-    - `symbols`: Comma-separated list of stock symbols
-    - `graph_type`: Type of analysis (daily_returns, rolling_mean, bollinger_bands, rsi, macd)
-- `GET /api/stocks/<ticker>/chart` - Generate candlestick charts
-- `GET /api/stocks/<ticker>/volume` - Generate volume analysis charts
 
 ## Technologies Used
 
