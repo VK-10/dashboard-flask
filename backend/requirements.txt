@@ -9,5 +9,5 @@ flask-cors==4.0.0
 numpy==2.2.3
 matplotlib==3.9.4
 seaborn==0.13.2
-mplfinance==0.12.10
+mplfinance==0.12.10b0
 gunicorn==22.0.0
