@@ -22,8 +22,8 @@ const StockAnalysisApp = () => {
   ];
 
   const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://127.0.0.1:5000';
-  const separateUrlCandelStick='http://127.0.0.1:5002';
-  const separateUrlTradingVolume='http://127.0.0.1:5003';
+  // const separateUrlCandelStick='http://127.0.0.1:5002';
+  // const separateUrlTradingVolume='http://127.0.0.1:5003';
 
   const handleGenerateGraph = async () => {
     if (!selectedSymbols.length || !graphType) {
@@ -39,9 +39,9 @@ const StockAnalysisApp = () => {
       let apiUrl='';
 
       if(graphType==='candlestick'){
-        apiUrl=`${separateUrlCandelStick}/api/stocks/${selectedSymbols.join(',')}/chart`
+        apiUrl=`${backendUrl}/api/stocks/${selectedSymbols[0]}/chart`
       } else if(graphType==='trading'){
-        apiUrl = `${separateUrlTradingVolume}/api/stocks/${selectedSymbols.join(',')}/volume`
+        apiUrl =  `${backendUrl}/api/stocks/${selectedSymbols[0]}/volume`;
       }else{
         apiUrl = `${backendUrl}/stock/graph?symbols=${selectedSymbols.join(',')}&graph_type=${graphType}`;
       }
