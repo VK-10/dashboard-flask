@@ -2,7 +2,7 @@
 
 A real-time stock market dashboard built with Flask and React that provides technical analysis and visualization tools for various stock symbols.
 
-Deployed link - [vercel-link](dashboard-flask-ndeithpts-lights-projects-96102957.vercel.app)
+Deployed link - [vercel-link](https://dashboard-flask.vercel.app/)
 
 ## Features
 
