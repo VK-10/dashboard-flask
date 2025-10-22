@@ -2,7 +2,7 @@ pip==25.2
 setuptools>=70
 wheel>=0.43
 Cython==3.0.10
-pandas==2.1.4
+pandas==2.3.3
 
 Flask==3.0.0
 flask-cors==4.0.0
