@@ -4,7 +4,9 @@ A real-time stock market dashboard built with Flask and React that provides tech
 
 backend-link - [wake-up](https://stock-analysis-api-w0zv.onrender.com/)
 
-Deployed link - [vercel-link](https://dashboard-flask.vercel.app/)
+Deployed link - [vercel-link](https://dashboard-flask.vercel.app/)  
+
+video - [link](https://youtu.be/2JYe3b_PCcc)
 
 ## Features
 
